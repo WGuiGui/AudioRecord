@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfp-zZ-vhy">
+                                <rect key="frame" x="27" y="46" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Ii5-qm-fEf"/>
+                                    <constraint firstAttribute="height" constant="30" id="gtZ-MN-nXs"/>
+                                </constraints>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="startRecordClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CMn-1E-Plv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUh-29-zp5">
+                                <rect key="frame" x="27" y="112" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="7rD-Ux-Iw9"/>
+                                    <constraint firstAttribute="height" constant="30" id="Qck-8r-BjE"/>
+                                </constraints>
+                                <state key="normal" title="停止"/>
+                                <connections>
+                                    <action selector="stopRecordClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zES-WG-4me"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70n-lQ-t0M">
+                                <rect key="frame" x="27" y="178" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="3st-qs-B8b"/>
+                                    <constraint firstAttribute="height" constant="30" id="7Ed-91-CqW"/>
+                                </constraints>
+                                <state key="normal" title="播放"/>
+                                <connections>
+                                    <action selector="playRecordClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LO6-TI-5eO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NA7-tE-ydS">
+                                <rect key="frame" x="19" y="237" width="61" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="O2j-7i-t2V"/>
+                                    <constraint firstAttribute="height" constant="30" id="qUn-Vq-wdZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="停止播放"/>
+                                <connections>
+                                    <action selector="stopPlayClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z8o-BH-id1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="70n-lQ-t0M" firstAttribute="top" secondItem="JUh-29-zp5" secondAttribute="bottom" constant="36" id="6ht-Ai-vJD"/>
+                            <constraint firstItem="NA7-tE-ydS" firstAttribute="top" secondItem="70n-lQ-t0M" secondAttribute="bottom" constant="29" id="7uv-v8-ZZE"/>
+                            <constraint firstItem="mfp-zZ-vhy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="GYb-V5-9bI"/>
+                            <constraint firstItem="JUh-29-zp5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="PYY-qZ-gKV"/>
+                            <constraint firstItem="70n-lQ-t0M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="QMM-un-4HF"/>
+                            <constraint firstItem="JUh-29-zp5" firstAttribute="top" secondItem="mfp-zZ-vhy" secondAttribute="bottom" constant="36" id="YiH-wN-RPC"/>
+                            <constraint firstItem="mfp-zZ-vhy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="ib7-lg-GdV"/>
+                            <constraint firstItem="NA7-tE-ydS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="jPU-FE-EfG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="356"/>
+        </scene>
+    </scenes>
+</document>
